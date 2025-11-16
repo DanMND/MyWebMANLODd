@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Payroll</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Simple Payroll</h1>
+
+  <h3>Add Employee</h3>
+  <input id="name" class="no-copy" type="text" placeholder="Employee Name">
+  <input id="days" type="number" placeholder="Days Worked">
+  <input id="rate" type="number" placeholder="Daily Rate">
+  <input id="deduction" type="number" placeholder="Deduction Amount">
+  <button onclick="addEmployee()">Add Employee</button>
+
+  <h3>Delete Employee</h3>
+  <input id="deleteIndex" type="number" placeholder="Line Number to Delete">
+  <button onclick="deleteEmployee()">Delete</button>
+
+  <h3>Payroll List</h3>
+  <table id="payroll">
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Employee Name</th>
+        <th>Days Worked</th>
+        <th>Daily Rate</th>
+        <th>Gross Pay</th>
+        <th>Deduction</th>
+        <th>Net Pay</th>
+      </tr>
+    </thead>
+    <tbody id="payrollTable"></tbody>
+  </table>
+
+  <a href="index.html"><button style="margin-top:20px;">← Back to Home</button></a>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>

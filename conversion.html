@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="conversion-page">
+<div class="container">
+  <h1>Conversion</h1>
+
+  <div class="input-row">
+    <input id="celsius" type="number" placeholder="Celsius">
+    <button onclick="convertCtoF()">C → F</button>
+    <div id="result1" class="result-box" tabindex="0">Result: </div>
+  </div>
+
+  <div class="input-row">
+    <input id="fahrenheit" type="number" placeholder="Fahrenheit">
+    <button onclick="convertFtoC()">F → C</button>
+    <div id="result2" class="result-box" tabindex="0">Result: </div>
+  </div>
+
+  <div class="input-row">
+    <input id="meters" type="number" placeholder="Meters">
+    <button onclick="convertMtoFt()">M → Ft</button>
+    <div id="result3" class="result-box" tabindex="0">Result: </div>
+  </div>
+
+  <div class="input-row">
+    <input id="feet" type="number" placeholder="Feet">
+    <button onclick="convertFttoM()">Ft → M</button>
+    <div id="result4" class="result-box" tabindex="0">Result: </div>
+  </div>
+
+  <a href="index.html"><button style="margin-top:20px;">← Back to Home</button></a>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>

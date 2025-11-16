@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Income Tax Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Income Tax Calculator</h1>
+  <p>Enter your taxable income below:</p>
+
+  <input id="income" type="number" placeholder="Enter taxable income">
+  <div style="display:flex; gap:8px; align-items:center; margin-top:6px;">
+    <button onclick="computeTax()">Compute Tax</button>
+    <button onclick="clearTax()">Clear</button>
+    <p id="taxResult" style="font-weight:bold; margin:0 0 0 8px;"></p>
+  </div>
+
+  <h3>Tax Table (Reference)</h3>
+  <table>
+    <tr><th>Range</th><th>Computation</th></tr>
+    <tr><td>Up to ₱250,000</td><td>0%</td></tr>
+    <tr><td>₱250,001–₱400,000</td><td>20% of excess over ₱250,000</td></tr>
+    <tr><td>₱400,001–₱800,000</td><td>₱30,000 + 25% of excess over ₱400,000</td></tr>
+    <tr><td>₱800,001–₱2,000,000</td><td>₱130,000 + 30% of excess over ₱800,000</td></tr>
+    <tr><td>₱2,000,001–₱8,000,000</td><td>₱490,000 + 32% of excess over ₱2,000,000</td></tr>
+    <tr><td>Over ₱8,000,000</td><td>₱2,410,000 + 35% of excess over ₱8,000,000</td></tr>
+  </table>
+
+  <a href="index.html"><button style="margin-top:20px;">← Back to Home</button></a>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
